@@ -16,19 +16,20 @@ const Navbar = () => {
                             <NavLink to="/">Home</NavLink>
                             <NavLink to="/apps">Apps</NavLink>
                             <NavLink to="/installation">Installation</NavLink>
+                             <Link to='https://github.com/oliullahakib' target='blank' className="btn bg-gradient-to-l from-[#9F62F2] to-[#632EE3] text-white"><img src={gitlogo} alt="" /> Contribute</Link>
                         </ul>
                     </div>
                     <Link to='/' className="btn btn-ghost text-xl"> <img src="/logo.png" alt="" className='w-10' /><span className='bg-gradient-to-l from-[#9F62F2] to-[#632EE3] bg-clip-text text-transparent'>HERO.IO</span></Link>
                 </div>
-                <div className="navbar-end  justify-center hidden lg:flex">
+                <div className="navbar-center  justify-center hidden lg:flex">
                     <ul className="menu menu-horizontal font-semibold gap-8 px-1">
                         <NavLink to="/">Home</NavLink>
                         <NavLink to="/apps">Apps</NavLink>
                         <NavLink to="/installation">Installation</NavLink>
                     </ul>
                 </div>
-                <div className="navbar-end">
-                    <Link to='https://github.com/oliullahakib/assinment8-hero-apps' className="btn bg-gradient-to-l from-[#9F62F2] to-[#632EE3] text-white"><img src={gitlogo} alt="" /> Contribute</Link>
+                <div className="navbar-end hidden md:flex">
+                    <Link to='https://github.com/oliullahakib' target='blank' className="btn bg-gradient-to-l from-[#9F62F2] to-[#632EE3] text-white"><img src={gitlogo} alt="" /> Contribute</Link>
                 </div>
             </div>
         </div>
