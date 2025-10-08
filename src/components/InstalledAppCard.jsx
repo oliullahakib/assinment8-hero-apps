@@ -1,0 +1,23 @@
+import { Download } from 'lucide-react';
+import React from 'react';
+
+const InstalledAppCard = ({app}) => {
+    return (
+        <div className='flex justify-between items-center bg-white shadow mt-3 px-3'>
+            <div className='flex gap-2'>
+                <img className='w-20' src={app.image} alt={app.title} />
+                <div>
+                    <p className='text-xl font-medium'>{app.title}</p>
+                    <div className='flex gap-2'>
+                        <p className='text-green-400 flex'><Download/>{app.downloads}M</p>
+                        <p className='text-orange-400'>★{app.ratingAvg}</p>
+                        <p className='text-gray-400'>{app.size}</p>
+                    </div>
+                </div>
+            </div>
+            <button className='btn btn-success text-white font-semibold'>Uninstall</button>
+        </div>
+    );
+};
+
+export default InstalledAppCard;

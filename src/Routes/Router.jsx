@@ -23,13 +23,15 @@ export const router = createBrowserRouter([
             },
             {
                 path:'/installation',
+                loader:()=> axios('/allAppsData.json'),
                 Component:Installation
             },
             {
                 path:"/details/:id",
                 Component:AppDetails,
-                 loader:()=> axios('/allAppsData.json'),
-                hydrateFallbackElement:<p>Loading..</p>
+                loader:()=> axios('/allAppsData.json'),
+                hydrateFallbackElement:<p>Loading..</p>,
+                errorElement:<p>App Not Found</p>
             }
         ]
     }
