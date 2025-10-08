@@ -1,19 +1,35 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router';
 import downlodIcon from "../assets/icon-downloads.png"
 import ratingIcon from "../assets/icon-ratings.png"
 import reviewIcon from "../assets/icon-review.png"
 import { Bar, BarChart, CartesianGrid, Legend, Tooltip, XAxis, YAxis } from 'recharts';
+import { addToLS, getFromLS } from '../LDB/LDB';
+import { toast } from 'react-toastify';
 
 
 const AppDetails = () => {
+    const [installed, setInstalled] = useState(false)
     const { id } = useParams()
     const allAppsData = useLoaderData()
     const allApps = allAppsData.data
     const singleApp = allApps.find(app => app.id === Number(id))
     const chartData = singleApp.ratings
-    console.log(chartData)
-    const { image, title, companyName, size } = singleApp
+    const { image, title, companyName, size, description } = singleApp
+    useEffect(() => {
+        const appIdArry = getFromLS()
+        if (appIdArry.includes(Number(id))) {
+            setInstalled(true)
+
+        }
+    }, [id])
+
+    console.log( installed)
+    const handleInstall = (title,id) => {
+        addToLS(id)
+        setInstalled(true)
+        toast.success(`Yahoo ⚡️ !! ${title} Installed Successfully`)
+    }
     return (
         <div className='bg-base-200'>
             <div className="app-info">
@@ -59,7 +75,7 @@ const AppDetails = () => {
                                     </div>
 
                                 </div>
-                                <button className="btn sm:w-1/2 btn-success text-white my-5">Install Now ({size})</button>
+                                <button disabled={installed? true:false} onClick={() => handleInstall(title,singleApp.id)} className="btn sm:w-1/2 btn-success text-white my-5">{installed ? "Installed" : `Install Now (${size})`}</button>
                             </div>
                         </div>
                     </div>
@@ -104,7 +120,12 @@ const AppDetails = () => {
                     </div>
                 </div>
             </div>
-            <div className="description"></div>
+            <div className="description w-11/12 mx-auto border-t-1 border-gray-300 pt-8 py-5" >
+                <p className='text-2xl font-semibold text-black'>Description:</p> {description}
+                <p className='text-gray-500'>
+                </p>
+
+            </div>
         </div>
     );
 };
