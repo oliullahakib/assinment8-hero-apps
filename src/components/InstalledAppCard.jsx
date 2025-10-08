@@ -3,7 +3,7 @@ import React from 'react';
 
 const InstalledAppCard = ({app}) => {
     return (
-        <div className='flex justify-between items-center bg-white shadow mt-3 px-3'>
+        <div className='flex flex-col md:flex-row justify-between items-center bg-white shadow mt-3 px-3'>
             <div className='flex gap-2'>
                 <img className='w-20' src={app.image} alt={app.title} />
                 <div>
@@ -15,7 +15,7 @@ const InstalledAppCard = ({app}) => {
                     </div>
                 </div>
             </div>
-            <button className='btn btn-success text-white font-semibold'>Uninstall</button>
+            <button className='btn btn-success text-white font-semibold my-2 md:my-0'>Uninstall</button>
         </div>
     );
 };
