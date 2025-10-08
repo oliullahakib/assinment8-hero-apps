@@ -1,0 +1,362 @@
+[
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/11733/11733564.png",
+    "title": "Photo Editor Pro Max",
+    "companyName": "Visual Sparks Inc.",
+    "id": 1001,
+    "description": "Powerful image editing suite with AI filters and batch processing capabilities.",
+    "size": 150,
+    "reviews": 15000,
+    "ratingAvg": 4.5,
+    "downloads": 0.75,
+    "ratings": [
+      { "name": "5 star", "count": 8000 },
+      { "name": "4 star", "count": 4500 },
+      { "name": "3 star", "count": 1250 },
+      { "name": "2 star", "count": 750 },
+      { "name": "1 star", "count": 500 }
+    ]
+  },
+  {
+    "image": "https://img.lovepik.com/free-png/20210926/lovepik-money-fund-icon-free-vector-illustration-material-png-image_401492960_wh1200.png",
+    "title": "Money Mind: Budget Tracker",
+    "companyName": "Finance Flow LLC",
+    "id": 1002,
+    "description": "Easy-to-use personal finance manager and expense tracking tool.",
+    "size": 22,
+    "reviews": 8500,
+    "ratingAvg": 4.1,
+    "downloads": 0.12,
+    "ratings": [
+      { "name": "5 star", "count": 3500 },
+      { "name": "4 star", "count": 2500 },
+      { "name": "3 star", "count": 1400 },
+      { "name": "2 star", "count": 600 },
+      { "name": "1 star", "count": 500 }
+    ]
+  },
+  {
+    "image": "https://m.media-amazon.com/images/I/81IKg46uilL._UF350,350_QL80_.jpg",
+    "title": "Mystic Island Puzzle",
+    "companyName": "GameCraft Studios",
+    "id": 1003,
+    "description": "A relaxing, $100$-level match-$3$ adventure game with beautiful graphics.",
+    "size": 95,
+    "reviews": 25000,
+    "ratingAvg": 4.7,
+    "downloads": 1.5,
+    "ratings": [
+      { "name": "5 star", "count": 16000 },
+      { "name": "4 star", "count": 5000 },
+      { "name": "3 star", "count": 2000 },
+      { "name": "2 star", "count": 1200 },
+      { "name": "1 star", "count": 800 }
+    ]
+  },
+  {
+    "image": "https://png.pngtree.com/png-clipart/20230414/ourmid/pngtree-weather-icon-png-image_6685458.png",
+    "title": "Hyper Local Weather",
+    "companyName": "Geo-Forecast Systems",
+    "id": 1004,
+    "description": "Real-time, minute-by-minute precipitation forecasts and detailed radar.",
+    "size": 45,
+    "reviews": 32000,
+    "ratingAvg": 3.2,
+    "downloads": 5.0,
+    "ratings": [
+      { "name": "5 star", "count": 5000 },
+      { "name": "4 star", "count": 4000 },
+      { "name": "3 star", "count": 6000 },
+      { "name": "2 star", "count": 8000 },
+      { "name": "1 star", "count": 9000 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqJiqUxIaYMWxEgcJmipnqzPYdNjwVqy_PPw&s",
+    "title": "ZenFit: Home Workout",
+    "companyName": "Active Life Apps",
+    "id": 1005,
+    "description": "Guided yoga and HIIT workouts with customized training plans.",
+    "size": 80,
+    "reviews": 7500,
+    "ratingAvg": 4.8,
+    "downloads": 0.25,
+    "ratings": [
+      { "name": "5 star", "count": 5000 },
+      { "name": "4 star", "count": 2000 },
+      { "name": "3 star", "count": 300 },
+      { "name": "2 star", "count": 150 },
+      { "name": "1 star", "count": 50 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/11247/11247526.png",
+    "title": "Lingua Pro (Spanish)",
+    "companyName": "Global Learn Inc.",
+    "id": 1006,
+    "description": "The fastest way to learn conversational Spanish with interactive lessons.",
+    "size": 180,
+    "reviews": 1800,
+    "ratingAvg": 4.4,
+    "downloads": 0.09,
+    "ratings": [
+      { "name": "5 star", "count": 1000 },
+      { "name": "4 star", "count": 600 },
+      { "name": "3 star", "count": 250 },
+      { "name": "2 star", "count": 50 },
+      { "name": "1 star", "count": 100 }
+    ]
+  },
+  {
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/62/69/a6/6269a606-4922-72d6-c4e4-bdac0e74c0f3/AppIcon-0-0-1x_U007epad-0-85-220.png/1200x600wa.png",
+    "title": "Cloud Notes & Sync",
+    "companyName": "Productivity Hub",
+    "id": 1007,
+    "description": "Simple, fast, and secure note-taking with cross-device synchronization.",
+    "size": 18,
+    "reviews": 40000,
+    "ratingAvg": 4.9,
+    "downloads": 10.0,
+    "ratings": [
+      { "name": "5 star", "count": 28000 },
+      { "name": "4 star", "count": 10000 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "2 star", "count": 500 },
+      { "name": "1 star", "count": 500 }
+    ]
+  },
+  {
+    "image": "https://geometrydash.io/data/image/game/neon-racer.png",
+    "title": "Neon Racer",
+    "companyName": "Pixel Dreams Games",
+    "id": 1008,
+    "description": "An exciting, high-speed retro arcade racing experience.",
+    "size": 55,
+    "reviews": 6000,
+    "ratingAvg": 3.7,
+    "downloads": 0.3,
+    "ratings": [
+      { "name": "5 star", "count": 1000 },
+      { "name": "4 star", "count": 2000 },
+      { "name": "3 star", "count": 1500 },
+      { "name": "2 star", "count": 1000 },
+      { "name": "1 star", "count": 500 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/3537/3537800.png",
+    "title": "Scientific Calculator Plus",
+    "companyName": "Math Tools Inc.",
+    "id": 1009,
+    "description": "Advanced scientific calculator with graphing functions and unit conversion.",
+    "size": 12,
+    "reviews": 1500,
+    "ratingAvg": 4.2,
+    "downloads": 0.05,
+    "ratings": [
+      { "name": "5 star", "count": 500 },
+      { "name": "4 star", "count": 600 },
+      { "name": "3 star", "count": 300 },
+      { "name": "2 star", "count": 50 },
+      { "name": "1 star", "count": 50 }
+    ]
+  },
+  {
+    "image": "https://static.vecteezy.com/system/resources/thumbnails/008/358/874/small/coloring-book-or-coloring-page-for-kids-monkey-clipart-nature-background-vector.jpg",
+    "title": "Toddler Color Book",
+    "companyName": "Bright Start Education",
+    "id": 1010,
+    "description": "Fun, safe, and educational coloring app for children aged $2$-$5$.",
+    "size": 65,
+    "reviews": 10000,
+    "ratingAvg": 4.6,
+    "downloads": 0.9,
+    "ratings": [
+      { "name": "5 star", "count": 5500 },
+      { "name": "4 star", "count": 3000 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "2 star", "count": 400 },
+      { "name": "1 star", "count": 100 }
+    ]
+  },
+  {
+    "image": "https://png.pngtree.com/png-clipart/20250309/original/pngtree-vpn-shield-icon-png-image_20612359.png",
+    "title": "Privacy Shield VPN",
+    "companyName": "Secure Connect LLC",
+    "id": 1011,
+    "description": "Fast, private, and secure VPN service with worldwide server locations.",
+    "size": 30,
+    "reviews": 20000,
+    "ratingAvg": 3.5,
+    "downloads": 4.0,
+    "ratings": [
+      { "name": "5 star", "count": 3000 },
+      { "name": "4 star", "count": 3000 },
+      { "name": "3 star", "count": 4000 },
+      { "name": "2 star", "count": 4000 },
+      { "name": "1 star", "count": 6000 }
+    ]
+  },
+  {
+    "image": "https://snowball-analytics.com/_next/static/media/main2.aefdd4d3.png",
+    "title": "Stock Portfolio Tracker",
+    "companyName": "Market Metrics Inc.",
+    "id": 1012,
+    "description": "Monitor your investments with real-time quotes and historical data.",
+    "size": 40,
+    "reviews": 3500,
+    "ratingAvg": 4.3,
+    "downloads": 0.15,
+    "ratings": [
+      { "name": "5 star", "count": 1500 },
+      { "name": "4 star", "count": 1200 },
+      { "name": "3 star", "count": 500 },
+      { "name": "2 star", "count": 200 },
+      { "name": "1 star", "count": 100 }
+    ]
+  },
+  {
+    "image": "https://pocketbook.ch/uploads/2/11383-pocketbook_reader_app.png",
+    "title": "Pocket Reader eBook App",
+    "companyName": "Digital Pages Co.",
+    "id": 1013,
+    "description": "An e-reader with customizable fonts, margins, and night mode.",
+    "size": 28,
+    "reviews": 5500,
+    "ratingAvg": 4.7,
+    "downloads": 0.45,
+    "ratings": [
+      { "name": "5 star", "count": 3500 },
+      { "name": "4 star", "count": 1500 },
+      { "name": "3 star", "count": 350 },
+      { "name": "2 star", "count": 100 },
+      { "name": "1 star", "count": 50 }
+    ]
+  },
+  {
+    "image": "https://get.appmaus.com/route-package-tracker.png",
+    "title": "Package Route Tracker",
+    "companyName": "Logistics Software",
+    "id": 1014,
+    "description": "Track all your online orders from various carriers in one place.",
+    "size": 15,
+    "reviews": 1200,
+    "ratingAvg": 3.8,
+    "downloads": 0.06,
+    "ratings": [
+      { "name": "5 star", "count": 250 },
+      { "name": "4 star", "count": 350 },
+      { "name": "3 star", "count": 300 },
+      { "name": "2 star", "count": 150 },
+      { "name": "1 star", "count": 150 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP3_UJ1HTBDmsioBxkU9UeBcinAA4nNGwv-g&s",
+    "title": "Rhythm Studio",
+    "companyName": "Audio Creation Labs",
+    "id": 1015,
+    "description": "Pocket music production studio with drum machines and synth pads.",
+    "size": 190,
+    "reviews": 2500,
+    "ratingAvg": 4.1,
+    "downloads": 0.08,
+    "ratings": [
+      { "name": "5 star", "count": 800 },
+      { "name": "4 star", "count": 800 },
+      { "name": "3 star", "count": 600 },
+      { "name": "2 star", "count": 200 },
+      { "name": "1 star", "count": 100 }
+    ]
+  },
+  {
+    "image": "https://e7.pngegg.com/pngimages/81/67/png-clipart-computer-network-diagram-networking-hardware-internet-local-area-network-tbilisi-computer-network-text-thumbnail.png",
+    "title": "Local Hangout Network",
+    "companyName": "Community Tech Inc.",
+    "id": 1016,
+    "description": "Connect with people nearby and discover local events and groups.",
+    "size": 70,
+    "reviews": 500,
+    "ratingAvg": 2.5,
+    "downloads": 0.1,
+    "ratings": [
+      { "name": "5 star", "count": 25 },
+      { "name": "4 star", "count": 25 },
+      { "name": "3 star", "count": 50 },
+      { "name": "2 star", "count": 150 },
+      { "name": "1 star", "count": 250 }
+    ]
+  },
+  {
+    "image": "https://images.seeklogo.com/logo-png/22/2/quick-meals-production-of-portioned-logo-png_seeklogo-221946.png",
+    "title": "Quick  Meals",
+    "companyName": "Home Chef Apps",
+    "id": 1017,
+    "description": "Simple, delicious recipes that can be made in half an hour or less.",
+    "size": 48,
+    "reviews": 7000,
+    "ratingAvg": 4.5,
+    "downloads": 0.4,
+    "ratings": [
+      { "name": "5 star", "count": 4000 },
+      { "name": "4 star", "count": 2000 },
+      { "name": "3 star", "count": 500 },
+      { "name": "2 star", "count": 300 },
+      { "name": "1 star", "count": 200 }
+    ]
+  },
+  {
+    "image": "https://img.freepik.com/free-vector/solar-system-infographic_23-2148407441.jpg?semt=ais_hybrid&w=740&q=80",
+    "title": "Solar System  Guide",
+    "companyName": "Cosmic View VR",
+    "id": 1018,
+    "description": "Interactive, educational  guide to all the planets and major moons.",
+    "size": 175,
+    "reviews": 4200,
+    "ratingAvg": 4.9,
+    "downloads": 0.18,
+    "ratings": [
+      { "name": "5 star", "count": 3000 },
+      { "name": "4 star", "count": 1000 },
+      { "name": "3 star", "count": 150 },
+      { "name": "2 star", "count": 30 },
+      { "name": "1 star", "count": 20 }
+    ]
+  },
+  {
+    "image": "https://w7.pngwing.com/pngs/322/342/png-transparent-computer-software-product-manuals-data-external-sending-card-blue-text-logo.png",
+    "title": "Super File Sender",
+    "companyName": "Utility Tools Pro",
+    "id": 1019,
+    "description": "High-speed local file transfer tool for large media files.",
+    "size": 10,
+    "reviews": 900,
+    "ratingAvg": 3.1,
+    "downloads": 0.03,
+    "ratings": [
+      { "name": "5 star", "count": 100 },
+      { "name": "4 star", "count": 100 },
+      { "name": "3 star", "count": 150 },
+      { "name": "2 star", "count": 250 },
+      { "name": "1 star", "count": 300 }
+    ]
+  },
+  {
+    "image": "https://images.vexels.com/media/users/3/127562/isolated/preview/b1c2408648bb6fa9a46d7dd0476227d5-digital-drawing-pad-pen.png",
+    "title": "Vector Drawing Pad",
+    "companyName": "Art & Design Studio",
+    "id": 1020,
+    "description": "Professional-grade vector drawing application for mobile devices.",
+    "size": 110,
+    "reviews": 11000,
+    "ratingAvg": 4.4,
+    "downloads": 0.6,
+    "ratings": [
+      { "name": "5 star", "count": 5000 },
+      { "name": "4 star", "count": 3500 },
+      { "name": "3 star", "count": 1500 },
+      { "name": "2 star", "count": 600 },
+      { "name": "1 star", "count": 400 }
+    ]
+  }
+]

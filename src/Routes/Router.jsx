@@ -3,6 +3,8 @@ import Root from "../Layouts/Root";
 import Home from "../Pages/Home";
 import Apps from "../Pages/Apps";
 import Installation from "../Pages/Installation";
+import axios from "axios";
+import AppDetails from "../Pages/AppDetails";
 
 export const router = createBrowserRouter([
     {
@@ -11,7 +13,9 @@ export const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                Component: Home
+                Component: Home,
+                loader:()=> axios('/allAppsData.json'),
+                hydrateFallbackElement:<p>Loading..</p>
             },
             {
                 path:'/apps',
@@ -20,6 +24,12 @@ export const router = createBrowserRouter([
             {
                 path:'/installation',
                 Component:Installation
+            },
+            {
+                path:"/details/:id",
+                Component:AppDetails,
+                 loader:()=> axios('/allAppsData.json'),
+                hydrateFallbackElement:<p>Loading..</p>
             }
         ]
     }

@@ -1,15 +1,18 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link, useLoaderData } from 'react-router';
 import googlePlayLogo from "../assets/googlePlay.png"
 import appStoreLogo from "../assets/appStore.webp"
 import heroImg from "../assets/hero.png"
+import AppsCard from '../components/AppsCard';
 const Home = () => {
+    const appsData = useLoaderData()
+    const someApps=appsData.data.slice(0,8)
     return (
         <div>
             <div className="head-section ">
                 <div className="content flex flex-col justify-center items-center md:w-8/12 mx-auto mt-20">
                     <h1 className=' text-[40px] md:text-7xl font-bold'><p className='text-center'>We Build</p>
-                        <span className='bg-gradient-to-l from-[#9F62F2] to-[#632EE3] bg-clip-text text-transparent'>Productive</span> Apps
+                        <span className='bg-gradient-to-l from-[#9F62F2] to-[#632EE3] bg-clip-text text-transparent'>Productive</span>Apps
                     </h1>
                     <p className='text-[#627382] w-3/4 my-3 text-center'>At HERO.IO, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting.Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
                     <div>
@@ -42,8 +45,20 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className="trending-app">
-
+            <div className="trending-app mt-20 w-11/12 mx-auto">
+                <div className='flex flex-col items-center justify-center'>
+                    <h2 className='text-5xl font-bold'>Trending Apps</h2>
+                    <p className='text-xl text-[#627382] mt-2'>Explore All Trending Apps on the Market developed by us</p>
+                </div>
+               <div className='apps-container mt-10 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4'>
+                 {
+                    someApps.map(app=><AppsCard key={app.id} app={app}/>)
+                 }
+                 
+                </div> 
+                <div className='flex justify-center items-center my-5'>
+                    <Link to='/apps' target='blank' className="btn bg-gradient-to-l from-[#9F62F2] to-[#632EE3] text-white"> Show All</Link>
+                </div>
             </div>
         </div>
     );

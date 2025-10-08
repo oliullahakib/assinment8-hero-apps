@@ -4,12 +4,12 @@ const Footer = () => {
     return (
         <footer className="sm:footer-horizontal bg-[#001931] text-neutral-content p-10">
             <div className=' flex justify-between  w-11/12 mx-auto border-b-2 border-blue-900 pb-4'>
-                <asidev className="flex items-center">
+                <div className="flex items-center">
                 <img className='w-10' src="/logo.png" alt="" />
                 <p>
                   HERO.IO
                 </p>
-            </asidev>
+            </div>
             <nav>
                 <h6 className="footer-title">Social Links</h6>
                 <div className="grid grid-flow-col gap-4">
