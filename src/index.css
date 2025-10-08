@@ -16,3 +16,6 @@ a.active::after{
   height: 2px;
   background:linear-gradient(to right,#632EE3,#9F62F2);
 }
+/* *{
+  border: 2px solid red;
+} */
