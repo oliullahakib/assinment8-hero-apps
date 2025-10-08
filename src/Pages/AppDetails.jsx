@@ -11,7 +11,7 @@ const AppDetails = () => {
     const allApps = allAppsData.data
     const singleApp = allApps.find(app => app.id === Number(id))
     console.log(singleApp)
-    const { image, title, companyName } = singleApp
+    const { image, title, companyName,size } = singleApp
     return (
         <div className='bg-base-200'>
             <div className="app-info">
@@ -57,13 +57,15 @@ const AppDetails = () => {
                                     </div>
 
                                 </div>
-                                <button className="btn sm:w-1/2 btn-success text-white my-5">Install Now (291 MB)</button>
+                                <button className="btn sm:w-1/2 btn-success text-white my-5">Install Now ({size})</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="rating"></div>
+            <div className="review-chart">
+
+            </div>
             <div className="description"></div>
         </div>
     );
