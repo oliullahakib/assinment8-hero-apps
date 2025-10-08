@@ -1,17 +1,19 @@
-import { Download, Star } from 'lucide-react';
 import React from 'react';
 import { useLoaderData, useParams } from 'react-router';
 import downlodIcon from "../assets/icon-downloads.png"
 import ratingIcon from "../assets/icon-ratings.png"
 import reviewIcon from "../assets/icon-review.png"
+import { Bar, BarChart, CartesianGrid, Legend, Tooltip, XAxis, YAxis } from 'recharts';
+
 
 const AppDetails = () => {
     const { id } = useParams()
     const allAppsData = useLoaderData()
     const allApps = allAppsData.data
     const singleApp = allApps.find(app => app.id === Number(id))
-    console.log(singleApp)
-    const { image, title, companyName,size } = singleApp
+    const chartData = singleApp.ratings
+    console.log(chartData)
+    const { image, title, companyName, size } = singleApp
     return (
         <div className='bg-base-200'>
             <div className="app-info">
@@ -64,7 +66,43 @@ const AppDetails = () => {
                 </div>
             </div>
             <div className="review-chart">
+                <h1 className='pl-5 sm:hidden mt-30 text-2xl font-semibold'>Ratings</h1>
+                <div className="flex sm:w-9/12 sm:mx-auto   ">
+                    <h1 className='mt-22 hidden sm:block text-2xl font-semibold'>Ratings</h1>
+                    <div className='hidden sm:block rotate-90 '>
+                        <BarChart
+                            width={400}
+                            height={600}
+                            data={chartData}
+                            margin={{ top: 20, right: 30, left: 20, bottom: 35 }}
+                        >
 
+                            <YAxis orientation='right' tickLine={false} axisLine={false} />
+
+                            <XAxis dataKey="name" angle={-90} tickLine={false} axisLine={false} tickMargin={30} />
+
+                            <Bar dataKey="count" fill='#FF8811' barSize={20} />
+
+                        </BarChart>
+                    </div>
+                    {/* For mobile */}
+                    <div className=' sm:hidden rotate-90 '>
+                        <BarChart
+                            width={400}
+                            height={350}
+                            data={chartData}
+                            margin={{ top: 20, right: 30, left: 20, bottom: 35 }}
+                        >
+
+                            <YAxis orientation='right' tickLine={false} axisLine={false} />
+
+                            <XAxis dataKey="name" angle={-90} tickLine={false} axisLine={false} tickMargin={30} />
+
+                            <Bar dataKey="count" fill='#FF8811' barSize={10} />
+
+                        </BarChart>
+                    </div>
+                </div>
             </div>
             <div className="description"></div>
         </div>
