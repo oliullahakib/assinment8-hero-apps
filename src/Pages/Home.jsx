@@ -57,7 +57,7 @@ const Home = () => {
                  
                 </div> 
                 <div className='flex justify-center items-center my-5'>
-                    <Link to='/apps' target='blank' className="btn bg-gradient-to-l from-[#9F62F2] to-[#632EE3] text-white"> Show All</Link>
+                    <Link to='/apps' className="btn bg-gradient-to-l from-[#9F62F2] to-[#632EE3] text-white"> Show All</Link>
                 </div>
             </div>
         </div>
