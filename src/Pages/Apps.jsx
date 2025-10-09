@@ -4,16 +4,19 @@ import AppsCard from '../components/AppsCard';
 import LoadingSpiner from '../components/LoadingSpiner';
 
 const Apps = () => {
+    // const allAppsData = useLoaderData()
     const [search, setSearch] = useState('')
     const [allApps, setAllApps] = useState([])
     const [loading, setLoading] = useState(true)
     useEffect(() => {
-        setLoading(false)
         fetch("/allAppsData.json")
             .then(res => res.json())
-            .then(data => setAllApps(data))
+            .then(data => {
+                setAllApps(data)
+                setLoading(false)
+            })
             .catch(err => console.log(err))
-            .finally(setLoading(false))
+            
     }, [])
     const term = search.trim().toLowerCase()
     const searchApps = allApps.filter(app => app.title.toLowerCase().includes(term))
@@ -24,7 +27,7 @@ const Apps = () => {
             setLoading(false)
         }, 500);
     }
-
+console.log(loading)
     return (
         <div>
             <div className="content pl-3 mb-5 flex flex-col items-center justify-center mt-20">
@@ -51,10 +54,9 @@ const Apps = () => {
                     </label>
                 </div>
             </div>
-                
             <div className='apps-container mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4'>
                 {
-                 searchApps.length===0?<div className='flex col-span-4 justify-center items-center my-10 text-3xl md:text-5xl text-gray-500 font-medium'> No App Found ⚠️</div> :loading?<div className='flex col-span-4 justify-center items-center my-10'> <LoadingSpiner/> </div> : searchApps.map(app => <AppsCard key={app.id} app={app} />)
+                 loading?<div className='flex col-span-4 justify-center items-center my-10'> <LoadingSpiner/> </div> :searchApps.length===0?<div className='flex col-span-4 justify-center items-center my-10 text-3xl md:text-5xl text-gray-500 font-medium'> No App Found ⚠️</div> : searchApps.map(app => <AppsCard key={app.id} app={app} />)
                 }
 
             </div>

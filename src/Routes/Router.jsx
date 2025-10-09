@@ -5,6 +5,8 @@ import Apps from "../Pages/Apps";
 import Installation from "../Pages/Installation";
 import axios from "axios";
 import AppDetails from "../Pages/AppDetails";
+import LoadingSpiner from "../components/LoadingSpiner";
+import Spinner from "../components/Spinner";
 
 export const router = createBrowserRouter([
     {
@@ -15,7 +17,7 @@ export const router = createBrowserRouter([
                 index: true,
                 Component: Home,
                 loader:()=> axios('/allAppsData.json'),
-                hydrateFallbackElement:<p>Loading..</p>
+                hydrateFallbackElement:<LoadingSpiner/>
             },
             {
                 path:'/apps',
@@ -24,14 +26,14 @@ export const router = createBrowserRouter([
             {
                 path:'/installation',
                 loader:()=> axios('/allAppsData.json'),
-                hydrateFallbackElement:<p>Loading..</p>,
+                 hydrateFallbackElement:<LoadingSpiner/>,
                 Component:Installation
             },
             {
                 path:"/details/:id",
                 Component:AppDetails,
                 loader:()=> axios('/allAppsData.json'),
-                hydrateFallbackElement:<p>Loading..</p>,
+                hydrateFallbackElement:<LoadingSpiner/>,
                 errorElement:<p>App Not Found</p>
             }
         ]

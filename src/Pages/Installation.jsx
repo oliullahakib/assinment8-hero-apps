@@ -3,6 +3,7 @@ import { Link, useLoaderData } from 'react-router';
 import { getFromLS } from '../LDB/LDB';
 import InstalledAppCard from '../components/InstalledAppCard';
 import { toast } from 'react-toastify';
+import Spinner from '../components/Spinner';
 
 const Installation = () => {
     const [installedApp, setInstalledApp] = useState([])
