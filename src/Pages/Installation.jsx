@@ -1,29 +1,39 @@
 import React, { useEffect, useState } from 'react';
-import { useLoaderData } from 'react-router';
+import { Link, useLoaderData } from 'react-router';
 import { getFromLS } from '../LDB/LDB';
 import InstalledAppCard from '../components/InstalledAppCard';
+import { toast } from 'react-toastify';
 
 const Installation = () => {
-    const [installedAppId, setInstalledAppId] = useState([])
-    const [sortedApp, setSortedApp] = useState([])
+    const [installedApp, setInstalledApp] = useState([])
     const [selected, setSelected] = useState(false)
     const allAppsData = useLoaderData()
     const allApps = allAppsData.data
-    const installedApp = allApps.filter(app => installedAppId.includes(app.id))
     useEffect(() => {
         const appsIdArry = getFromLS()
-        setInstalledAppId(appsIdArry)
-    }, [])
-    const handleSort =(e)=>{
-        if(e.target.value==="asc"){
-            const sortedAppHL = [...installedApp].sort((a,b)=>b.downloads-a.downloads)
-            setSortedApp(sortedAppHL)
+        const installedAppArr = allApps.filter(app => appsIdArry.includes(app.id))
+        setInstalledApp(installedAppArr)
+    }, [allApps])
+    const handleSort = (e) => {
+        if (e.target.value === "asc") {
+            const sortedAppHL = [...installedApp].sort((a, b) => b.downloads - a.downloads)
+            setInstalledApp(sortedAppHL)
         }
-        if(e.target.value==="desc"){
-            const sortedAppLH = [...installedApp].sort((a,b)=>a.downloads-b.downloads)
-            setSortedApp(sortedAppLH)
+        if (e.target.value === "desc") {
+            const sortedAppLH = [...installedApp].sort((a, b) => a.downloads - b.downloads)
+            setInstalledApp(sortedAppLH)
         }
         setSelected(true)
+    }
+    const handleDelete =(title,id)=>{
+        console.log("delete this id",id)
+        const appsIdArry = getFromLS()
+        const filterAppsIdArr = appsIdArry.filter(i=>i!==id)
+        localStorage.setItem("appId",JSON.stringify(filterAppsIdArr))
+
+        const newInstallApps = installedApp.filter(app=>app.id!==id)
+        setInstalledApp(newInstallApps)
+        toast(`🗑️ ${title} un-installed from your Device`)
     }
     return (
         <div>
@@ -34,7 +44,7 @@ const Installation = () => {
             <div className='w-11/12 mx-auto flex justify-between'>
                 <h3 className='text-2xl font-semibold'>{installedApp.length} Apps Found</h3>
                 <div >
-                    <select onClick={(e)=> handleSort(e)} className='btn' >
+                    <select onClick={(e) => handleSort(e)} className='btn' >
                         <option disabled={selected} >Short By Size</option>
                         <option value="desc">Low → Heigh</option>
                         <option value="asc">Heigh → Low</option>
@@ -43,7 +53,12 @@ const Installation = () => {
             </div>
             <div className='w-11/12 mx-auto my-5'>
                 {
-                  sortedApp.length===0?installedApp.map(app => <InstalledAppCard key={app.id} app={app} />):sortedApp.map(app => <InstalledAppCard key={app.id} app={app} />)
+                  installedApp.length===0?
+                  <div className='flex flex-col justify-center items-center'>
+                    <h1 className='text-4xl font-bold text-gray-400'>No Install App Yet!</h1>
+                    <Link className='btn bg-gradient-to-l from-[#9F62F2] to-[#632EE3] text-white mt-5' to={"/apps"}> Go To Apps</Link>
+                    </div>
+                  :  installedApp.map(app => <InstalledAppCard key={app.id} app={app} handleDelete ={handleDelete} />)
                 }
             </div>
         </div>

@@ -1,7 +1,7 @@
 import { Download } from 'lucide-react';
 import React from 'react';
 
-const InstalledAppCard = ({app}) => {
+const InstalledAppCard = ({app,handleDelete}) => {
     return (
         <div className='flex flex-col md:flex-row justify-between items-center bg-white shadow mt-3 px-3'>
             <div className='flex gap-2'>
@@ -15,7 +15,7 @@ const InstalledAppCard = ({app}) => {
                     </div>
                 </div>
             </div>
-            <button className='btn btn-success text-white font-semibold my-2 md:my-0'>Uninstall</button>
+            <button onClick={()=>handleDelete(app.title,app.id)} className='btn btn-success text-white font-semibold my-2 md:my-0'>Uninstall</button>
         </div>
     );
 };
