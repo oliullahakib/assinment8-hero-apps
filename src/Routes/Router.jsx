@@ -8,6 +8,7 @@ import AppDetails from "../Pages/AppDetails";
 import LoadingSpiner from "../components/LoadingSpiner";
 import Spinner from "../components/Spinner";
 import AppNotFound from "../Pages/AppNotFound";
+import Error404Page from "../Pages/Error404Page";
 
 export const router = createBrowserRouter([
     {
@@ -36,6 +37,10 @@ export const router = createBrowserRouter([
                 loader:()=> axios('/allAppsData.json'),
                 hydrateFallbackElement:<LoadingSpiner/>,
                 errorElement:<AppNotFound/>
+            },
+            {
+                path:"*",
+                element:<Error404Page/>
             }
         ]
     }

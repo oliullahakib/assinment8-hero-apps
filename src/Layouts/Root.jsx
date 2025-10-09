@@ -7,7 +7,6 @@ import LoadingSpiner from '../components/LoadingSpiner';
 
 const Root = () => {
     const navigation = useNavigation()
-    console.log(navigation.state)
     return (
         <div >
             {

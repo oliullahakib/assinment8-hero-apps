@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router';
 const AppsCard = ({ app }) => {
     const navigate = useNavigate()
     return (
-        <div onClick={()=>navigate(`/details/${app.id}`)} className="card bg-base-100 flex h-96 shadow-sm mt-3 cursor-pointer">
+        <div onClick={()=>navigate(`/details/${app.id}`)} className="card bg-base-100 flex h-96 shadow-sm mt-3 cursor-pointer hover:scale-110  transition duration-300 ease-in-out ">
             <figure className="px-3 pt-3">
                 <img
                     src={app.image}
