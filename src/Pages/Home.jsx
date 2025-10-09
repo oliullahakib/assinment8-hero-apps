@@ -16,9 +16,9 @@ const Home = () => {
                     </h1>
                     <p className='text-[#627382] w-3/4 my-3 text-center'>At HERO.IO, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting.Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
                     <div>
-                        <Link className='btn bg-white mr-5' target='blank' to="https://play.google.com/store/games?hl=en">
+                        <Link className='btn bg-white mr-5 hover:scale-110 transition duration-300 ease-in-out' target='blank' to="https://play.google.com/store/games?hl=en">
                             <img className='w-9' src={googlePlayLogo} alt="" /> Google Play</Link>
-                        <Link className='btn bg-white' target='blank' to="https://www.apple.com/app-store/"><img className='w-9' src={appStoreLogo} alt="" /> App Store</Link>
+                        <Link className='btn bg-white hover:scale-110 transition duration-300 ease-in-out' target='blank' to="https://www.apple.com/app-store/"><img className='w-9' src={appStoreLogo} alt="" /> App Store</Link>
                     </div>
                 </div>
                 <div className="heroImg flex items-center justify-center mt-10">
