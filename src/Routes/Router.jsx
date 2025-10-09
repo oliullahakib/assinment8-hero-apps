@@ -19,11 +19,12 @@ export const router = createBrowserRouter([
             },
             {
                 path:'/apps',
-                Component:Apps
+                Component:Apps,
             },
             {
                 path:'/installation',
                 loader:()=> axios('/allAppsData.json'),
+                hydrateFallbackElement:<p>Loading..</p>,
                 Component:Installation
             },
             {
