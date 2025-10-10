@@ -46,7 +46,7 @@ const Installation = () => {
                 <h3 className='text-2xl font-semibold'>{installedApp.length} Apps Found</h3>
                 <div >
                     <select onClick={(e) => handleSort(e)} className='btn' >
-                        <option disabled={selected} >Short By Size</option>
+                        <option disabled={selected} >Short By Downloads</option>
                         <option value="desc">Low → Heigh</option>
                         <option value="asc">Heigh → Low</option>
                     </select>
