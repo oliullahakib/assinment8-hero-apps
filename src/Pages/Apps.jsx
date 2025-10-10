@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from 'react';
-// import { useLoaderData } from 'react-router';
 import AppsCard from '../components/AppsCard';
 import LoadingSpiner from '../components/LoadingSpiner';
 
 const Apps = () => {
-    // const allAppsData = useLoaderData()
     const [search, setSearch] = useState('')
     const [allApps, setAllApps] = useState([])
     const [loading, setLoading] = useState(true)
