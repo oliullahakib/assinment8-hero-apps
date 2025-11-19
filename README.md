@@ -11,9 +11,7 @@
 ----
 
 ### Description: 
-This app is a callection of many useful app for your Device. You can install thous apps. We have over **132** popular apps with **906k** reviews. You can find thous apps in your install section .And we always insure your safety and includes only safe apps. Hoping you get your app form here.
-=======
-### Description: This app is a callection of many useful app for your Device. You can install thous apps. We have over **132** popular apps with **906k** reviews. You can find thous apps in your install section .And we always insure your safety and includes only safe apps. Hoping you get your app form here.
+This app is a callection of many useful app for your Device. You can install thous apps. You can find thous apps in your install section .And we always insure your safety and includes only safe apps. Hoping you get your app form here.
 
 ----
 
