@@ -1,3 +1,14 @@
-**App Name: Hero-App**
-**Description:** This app is a callection of many useful app for your Device. You can find thous app and install in your device. We have over **132** popular apps with **906k** reviews. And over **26.6M** Pepole downlods apps for your app.And we always insure your safety in includes only safe apps. Hoping you get your app form here.
-**Technologies:** We Build our app with ReactJS along with React Router, Tailwind Css, Lucide React,React-toastify,Daisy Ui etc.
+### App Name: Hero-App
+
+----
+
+### Description: This app is a callection of many useful app for your Device. You can install thous apps. We have over **132** popular apps with **906k** reviews. You can find thous apps in your install section .And we always insure your safety and includes only safe apps. Hoping you get your app form here.
+
+----
+
+### Technologies: 
+- Frontend: React.js,React Router
+- Backend: Node.js, Express.js
+- Authentication: firebase
+- Database: mongodb
+- Styling: Tailwind CSS,Daisy Ui 
