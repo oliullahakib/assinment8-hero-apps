@@ -31,6 +31,7 @@ const AppDetails = () => {
         toast.success(`Yahoo ⚡️ !! ${title} Installed Successfully`)
     }
     return (
+       
         <div className='bg-base-200'>
             <div className="app-info">
                 <div className="hero  ">
